@@ -20,6 +20,8 @@ namespace Profile.ImageProcessing.Controllers
 
         public IActionResult Index()
         {
+            ViewData["CurrentDate"] = DateTime.UtcNow;
+
             return View();
         }
 
